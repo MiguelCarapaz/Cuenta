@@ -14,10 +14,6 @@ public class Cuenta {
         titular = leer.nextLine();
     }
 
-    public void cantidad_string(){
-        String cadena = String.valueOf(cantidad);
-        String totalString = String.valueOf(cantidad);
-    }
     public void ingresar(){
         System.out.print("Ingrese el monto a depositar: ");
         double ingresar = leer.nextInt();
@@ -32,6 +28,10 @@ public class Cuenta {
             System.out.print("No se puede retirar el monto por que no tiene los fondos necesarios: ");
             cantidad=0;
         }
+    }
+    public void cantidad_string(){
+        String cadena = String.valueOf(cantidad);
+        String totalString = String.valueOf(cantidad);
     }
     public void mostrar_datos() {
         System.out.println("Titular: " +getTitular());
